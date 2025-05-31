@@ -176,11 +176,11 @@
                                         </tr>
                                         <tr>
                                             <th scope="row">Tuition</th>
-                                            <td class="text-muted fw-normal">$13,000 (school year) / $6,500 (semester)</td>
+                                            <td class="text-muted fw-normal">$13,474 (school year) / $6,740 (semester)</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">Health Insurance</th>
-                                            <td class="text-muted fw-normal">$550 CAD (up to 13 months) / $300 CAD (up to 6 months)</td>
+                                            <td class="text-muted fw-normal">$550 CAD (up to 13 months) / $300 CAD (up to 5 months)</td>
                                         </tr>
                                         <tr>
                                             <th scope="row">Report Card Validation</th>
@@ -306,13 +306,15 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr id="applying">
+                                            <tr>
                                                 <th scope="row">Summer Program</th>
-                                                <td class="text-muted fw-normal">$6,800</td>
+                                                <td class="text-muted fw-normal">$7,200</td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                </div>
+
+                                    <p data-aos="fade-up" data-aos-delay="300" class="mt-3 fst-italic fw-normal" id="applying"><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="text-decoration-underline">Learn More About the Summer Program</a></p>
+                                   </div>
                                 <!--end of summer Program-->
 
 
@@ -395,6 +397,49 @@
 
   </main>
 
+    <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header" style="border-bottom: none;">
+          <h5 class="modal-title fw-semibold accent-text display-6 mt-3 lh-sm" id="exampleModalLabel">Explore, Learn & Grow in Canada This Summer!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="border-bottom: none;">
+            <img src="assets/img/summer 1.jpg" class="img-fluid">
+            
+            <div class="p-3">
+                <h3 class="fw-semibold accent-text mt-5">● Safe & Friendly Homestay</h3>
+                <h6 class="fw-normal">Stay with carefully screened Canadian families who treat you like one of their own.</h6>
+                <img src="assets/img/family.jpg" width="979" height="650" class="img-fluid mt-3">
+
+                <h3 class="fw-semibold accent-text mt-5">● Exciting Cultural Activities</h3>
+                <h6 class="fw-normal">Visit West Edmonton Mall (the largest in North America!)</h6>
+                <img src="assets/img/edminton mall.jpg" width="979" height="650" class="img-fluid mt-3">
+
+                <h3 class="fw-semibold accent-text mt-5">● Local festivals, museums, and sports events</h3>
+                <h6 class="fw-normal">Enjoy lively festivals, fun museum trips, and exciting local sports in the heart of the community.</h6>
+                <img src="assets/img/festival.png" width="979" height="650" class="img-fluid mt-3">
+
+                <h3 class="fw-semibold accent-text mt-5">● Group BBQs, movie nights, and more!</h3>
+                <h6 class="fw-normal">Relax with new friends over tasty BBQs, fun movie nights, and unforgettable group hangouts.</h6>
+                <img src="assets/img/bbq.jpg" width="979" height="650" class="img-fluid mt-3">
+
+                <h3 class="fw-semibold accent-text mt-5">● Personal Growth & Friendships</h3>
+                <h6 class="fw-normal">Make friends from around the world while gaining independence and global exposure.</h6>
+                <img src="assets/img/friends.jpg" width="979" height="650" class="img-fluid mt-3">
+            </div>
+            
+        </div>
+        <div class="modal-footer" style="border-top: none;">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end of modal-->
+
+  
   <footer id="footer" class="footer light-background pb-5 ps-3 pe-3" data-aos="fade-up" data-aos-delay="200">
 
     <div class="container fst-normal footer-top">
@@ -445,6 +490,16 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <script>
+    var myModal = document.getElementById('myModal')
+  var myInput = document.getElementById('myInput')
+
+  myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+  })
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
